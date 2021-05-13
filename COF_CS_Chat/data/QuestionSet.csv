@@ -1,0 +1,71 @@
+﻿family,question_main,intent,QuestionWords
+Applying and account information,What information does Banco Uno® require when I apply for a credit card?,Cardapply,what how apply information need card
+Applying and account information,Can I add an authorized user to my card?,Authuser,add auth authorized user card
+Applying and account information,How can I find out the status of my credit card application?,CardAppStatus,find update status  credit card application
+Applying and account information,When will I receive my new credit card?,NewCCReceive,when timing receive new card
+Applying and account information,How do you apply my payments?,ApplyPayments,apply payments how principal interest
+Applying and account information,What should I do if I’ve been declined and can’t access my secure letter online?,DeclineLetter,declined letter access online secured
+Lost or Stolen Card,How can I report a lost or stolen credit card?,LostStolenCard,how lost stolen card report
+Lost or Stolen Card,"If my card is lost or stolen, how can I make sure that I don’t get stuck with fraudulent purchases on my bill?",LostStolenFraud,lost stolen card fraud report
+Traveling outside the country,Will Banco Uno charge me a fee if I use my credit card overseas?,ForeignFee,charge fee card international foreign country
+Traveling outside the country,Do I need to contact Banco Uno before using my card out of the country?,UseOutside,use card out country tell Banco
+Understanding Credit Report,What’s a credit report and what information does it include?,CreditReport,Credit report information includes what
+Understanding Credit Report,When does Banco Uno update an account to the credit bureaus?,CreditBureau,when Banco updates credit bureau
+Understanding Credit Report,How long does negative information stay on a credit report?,CBRNegative,negative delinquent stay on credit report bureau
+Understanding Credit Report,How do I contact the credit bureaus?,CBRContact,how to contact credit bureau
+Understanding Credit Report,How do I get a copy of my credit report?,CBRcopy,how to get credit bureau copy
+Understanding Credit Report,What should I do if I find a mistake in my credit report?,CBRMistake,what to do mistake credit report bureau
+Understanding Credit Report,"If you sold my account, why is Banco Uno still appearing on my credit report?",CBRSold,sold appear credit report bureau
+Understanding Credit Report,"When my account status changed after Banco Uno sold it, why does Banco Uno still show the old status on my credit report?",CBRStatus,sold old status bureau report
+Understanding Credit Report,I opened a credit card with a retailer. Why is Banco Uno showing up on my credit report?,CBRretailer,credit report retailer Walmart change bureau
+Prime Rate Questions,What is the Prime Rate?,PrimeRate,What Prime Rate on the card
+Prime Rate Questions,What is the current APR for my account?,APR,current APR interest rate for account
+Prime Rate Questions,How do you calculate my variable APR?,VarAPR,how to calculate variable interest APR 
+Prime Rate Questions,How will I know if my account is affected by a Prime Rate change?,APRchange,Prime rate change APR impact
+Prime Rate Questions,Will my APR ever go back down?,APRdrop,APR drop later credit history improves
+Prime Rate Questions,How can I reduce the amount of interest that I pay?,Intdrop,Reduce APR interest lower rate
+Prime Rate Questions,How will a Prime Rate change affect my minimum payment?,Minpay,minimum payment Prime APR Prime Rate
+Eligibility,Are all Banco Uno cards eligible for a credit line increase?,Clinc,eligible credit limit line increase
+Eligibility,What factors determine if I’m eligible for a credit line increase?,clelig,factor eligible credit line increase
+Credit line increase requests,What information do you need from me when I request a credit line increase?,clinfo,information needed for credit line increase
+Credit line increase requests,What will you do with my information?,clinfouse,what you do with credit line info
+Credit line increase requests,"Why do I have to submit my employment status, income and monthly housing payment to request a credit line increase?",clinfo2,credit line increase employment income housing
+Credit line increase requests,I’m not sure how to answer the question about income. Can you help?,clincome,credit line increase income answer
+Credit line increase requests,I'm not sure how to answer the question about employment. Can you help?,clemp,credit line increase employment answer
+Credit line increase requests,"If somebody else pays my expenses, can I include that in my income amount?",clexp,credit line income somebody else
+Credit line increase requests,I'm not sure how to answer the question about my rent or mortgage. Can you help?,clrent,credit line rent mortgage increase answer question
+Credit line increase requests,I’m not sure how to answer the question about how much I (or my small business) spend using credit cards each month. Can you help?,clspend,credit line spend limit increase answer question
+Credit line increase requests,I'm not sure how to answer the question about my business's annual revenue. Can you help?,clbusiness,credit line limit business revenue question
+Approved Requests,What will happen when I submit my request?,applyhappen,submit request what happens next
+Approved Requests,When will my new credit line be available?,applycl,submit new credit line limit
+Approved Requests,Can I request a credit line increase for a different Banco Uno credit card account?,clincreas,other card credit line limit increase
+Declined requests,When can I make another request for a credit line increase?,clinclater,decline increase when request again
+Declined requests,What can I do to have a better chance of being approved for a credit line increase in the future?,approvecl,what do increase chance approve
+Declined requests,"The letter I received shows the reasons why I wasn’t approved for a credit line increase. If I fix the reasons shown in my letter, will I be approved for an increase?",anothercl,fix reasons decline increase credit line limit
+Declined requests,What are the most common reasons credit line increase requests are declined?,reasonsdecline,most common reasons credit line increase declined
+Declined requests,"I have questions about account characteristics decline reasons like how long my account’s been open, etc.",resdecl,questions about account decline reasons
+General Rewards,How can I review and redeem my rewards—or get help if I have questions?,rewards1,how to see review redeem rewards
+General Rewards,"If I don’t pay my credit card bill in full every month, will I still earn rewards?",rewards2,earn get rewards don’t miss bill pay
+General Rewards,What are the requirements to redeem rewards?,rewards3,requirements needed to redeem rewards miles
+General Rewards,What types of purchases qualify for rewards?,rewards4,what purchases qualifies get rewards
+General Rewards,Can I lose my rewards or do they expire?,rewards5,Do rewards lose or expire
+General Rewards,Where can I learn more about using my rewards at Amazon.com and with PayPal?,rewards6,learn more about using rewards
+Travel Rewards,How can I redeem my miles for travel purchases?,rewards7,How redeem miles travel purchases
+Travel Rewards,Can I redeem the miles I earn for something other than travel?,rewards9,redeem miles for other than travel
+Cash Back Rewards,How do I get my cash back?,rewards10,How to get cash back
+Cash Back Rewards,Can I redeem for something other than cash?,rewards11,can redeem other than cash
+Greeting,Hi,greeting,Hi
+Greeting,How are you?,greeting,How are you?
+Greeting,Hello,greeting,Hello
+Greeting,Hola,greeting,Hola
+Greeting,Hey,greeting,Hey
+Goodbye,Bye,bye,Bye
+Goodbye,Goodbye,bye,Goodbye
+Goodbye,See you later,bye,See you later
+Goodbye,Nice chatting with you,bye,Nice chatting with you
+Goodbye,Till next time,bye,Till next time
+Goodbye,Adios,Thanks,Adios
+Thanks,Thanks,Thanks,Thanks
+Thanks,Thank you,Thanks,Thank you
+Thanks,Awesome,Thanks,Awesome
+Thanks,Great,Thanks,Great
