@@ -7,6 +7,7 @@ import pickle
 import string
 import json
 import streamlit as st
+from PIL import Image
 
 # Visualization library
 import seaborn as sns
@@ -26,10 +27,14 @@ from tensorflow.keras.backend import manual_variable_initialization
 
 manual_variable_initialization(True)
 
+# header image
+col1, col2 = st.beta_columns(2)
+image1 = Image.open('./assets/ChatAgent.jpeg')
+col1.image(image1, use_column_width=True)
+
 #header
 st.title('Agent Assistant (AA) for Banco Uno')
-st.write('AA helps with:')
-st.write('Translation to spanish, Sentence completions, Answering product questions')
+st.write('AA helps with: Translation to spanish, Sentence completions, Answering product questions')
 #st.write('#1 Translation to Spanish')
 #st.write('#2 Completing your sentences as you type')
 #st.write('#3 Answering product questions to serve our customers')
@@ -161,7 +166,7 @@ if page == 'Translate to Spanish':
 
     # user inputs
     st.title('English to Spanish translator')
-    st.write('This app helps with chatting back with Spanish-speaking customers')
+    st.write('This app helps to chat with Spanish-speaking customers')
     question_text_eng=''
     question_text_eng = st.text_input("Hola!  Please enter the text you would like to be translated to Spanish and hit 'Enter'")
 
@@ -329,7 +334,7 @@ if page == 'Complete sentences':
     #######################################***********************************************
 
     # user inputs
-    st.title('This app helps to complete sentences saving valuable time')
+    st.title('Sentence Completer to save time')
     question_text_comp=''
     question_text_comp = st.text_input("Please enter the first few words of sentence you would like to complete and hit 'Enter'")
 

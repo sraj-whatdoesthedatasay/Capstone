@@ -3,7 +3,6 @@
 #### Shashank Rajadhyaksha
 #### *DSIR22221-E Capstone Project, Presented 5.14.21*
 
-
 ## Executive Summary
 
 Agents in various operational sites have to do a vast variety of tasks and have to multitask using the tools they have.  These agents are the face of the company to a lot of customers and the customer experience provided by these agents is very important in driving customer's perception of the product and the company.
@@ -94,7 +93,17 @@ Train and Test split were created and the model was trained through multiple epo
 The training program was modified to store the model every 5 epochs.  In addition, another function was written to load the interim model as well as load other data required for training.  This needed converting the interim dictionaries that were created into pickled files that would then have to be read again for the model to continue learning using the loaded model.
 
 In addition an inference model had to be developed, where one would pass the text that had to be translated as input, it would then predict the translation or sentence completion by reading the encoder and decoder configurations from the saved model - and it would then write the translated Spanish text or the completed sentence.
-    
+
+Here are the tactical steps for the model building process mapped to the scripts in the github:
+
+- Translation from English to Spanish:
+    - St1: reads in the text file which has Spanish/English sentences and cleanses data around removing punctuations, speciail characters, numbers etc.  It then removes duplicate English sentences and prunes short and long sentences and then creates the 'EngSpa.csv' file. 
+    - St2: reads in the 'EngSpa.csv' file from the previous step, parses the 'eng' and 'spa' columns from the file to a dataframe, builds out lists to be used for modelling, creates dictionaries of words from input and target features with a forward and reverse view.  It then creates two 3-dimensional array (#lines * #words in the line * #tokens for input or target) that is then used for modelling and models are created using multiple epochs.
+
+- Sentence Completer
+    - St1:  reads in the 'spa.txt' file which has Spanish/English sentences and cleanses data around removing punctuations, speciail characters, numbers etc.  It then removes duplicate English sentences and prunes short and long sentences and then creates 'eng.csv' file. 
+    - St2:  reads in the 'eng.csv' file from the previous step, parses the 'eng_pre' and 'eng_post' columns from the file to a dataframe, builds out lists to be used for modelling, creates dictionaries of words from input and target features with a forward and reverse view.  It then creates two 3-dimensional array (#lines * #words in the line * #tokens for input or target) that is then used for modelling and models are created using multiple epochs.
+    - St3: reads in the model as well as dictionaries and other inputs for the model.  This then creates the function that can be used for completing sentences.
 
 ## Chat Model Build
 ### Data Cleaning Steps
@@ -107,7 +116,6 @@ In addition an inference model had to be developed, where one would pass the tex
 - Lemmatized data so only singular forms of words remained
 - Removed English stopwords
 
-   
 ### Modeling for Chat
 - Dataset included ~36k rows of chat related questions and the corresponding intent
 - There were about 70 different intents (or classes)
@@ -119,9 +127,13 @@ In addition an inference model had to be developed, where one would pass the tex
         - Train score:  .997
         - Test score: .996
     - Interpretation:
-        - Our logistic regression model scored extremely well.  This was mainly because the 'chat corpus' was developed using permutations of the questions from the FAQ.  So there were not many unseen words - which would happen in an actual chat conversation.  A next step here would be to train the model on actual chat questions and then map to the intent and evaluate how the model would do.
+        - The logistic regression model scored extremely well.  This was mainly because the 'chat corpus' was developed using permutations of the questions from the FAQ.  So there were not many unseen words - which would happen in an actual chat conversation.  A next step here would be to train the model on actual chat questions and then map to the intent and evaluate how the model would do.
         - Tested a Neural Net model but the performance was so strong from the Logistic Regression model that there was not a lot of value in evaluating different models.  This would be more relevant when one is building the model on actual varied chat transcripts.
-        
+
+Here are the tactical steps for the model building process mapped to the scripts in the github:
+- St1: used to create a chat corpus from downloading the FAQ dataset.  
+- St2: reads in the chat corpus, does standard data processing and then models logistic regression.
+
 ## Agent Assistant App using Streamlit
 
 We were able to achieve our goal of helping Chat agents by providing them tools to enable translation, sentence completion as well as a chatbot to quickly look up product terms.  
@@ -132,6 +144,8 @@ The app has 3 functionalities that leverages models to make predictions:
 - Provides credit card product related answers after a user types in their question
 
 We believe that this app can improve efficiency for chat agents by providing them quick answers at their finger-tips during various interactions.  
+
+The streamlit code is stored in main folder and is called GlobalStreamlit.py.  It creates a side-frame which allows to pick between the 3 apps and then the app can be used to try out one of the 3 options.
 
 ## Conclusions & Future Directions
 
